@@ -31,7 +31,7 @@ st.markdown(
 
 
 # creat a data frame and replace 'nan'with empty strings
-df = pd.read_excel((r'C:\Users\xostech\Downloads\fall_numbers.xlsx'))
+df = pd.read_excel('fall_numbers.xlsx')
 
 
 st.markdown("<h2 style='text-align: center;'>Team Quadrant Report</h2>", unsafe_allow_html=True)
@@ -134,7 +134,7 @@ with col2:
 st.markdown("<h2 style='text-align: center;'>Individual Player Profiles</h2>", unsafe_allow_html=True)
 
 # create second dataframe and fill the 'nan' values with empty strings
-df2= pd.read_excel((r'C:\Users\xostech\Downloads\Fall IPP DOC.xlsx'))
+df2= pd.read_excel(('Fall IPP DOC.xlsx'))
 df2.fillna('', inplace=True)
 
 # directory storing headshots
